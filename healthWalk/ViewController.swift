@@ -34,6 +34,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        configNavi()
+    }
+    
     private func configUI() {
         configNavi()
         self.view.addSubview(tableView)
@@ -44,8 +48,29 @@ class ViewController: UIViewController {
     
     private func configNavi() {
         self.title = "健康"
+        let rightBtn = UIBarButtonItem(title: "关于", style: .done, target: self, action: #selector(rightBarBtnClick))
+        self.navigationItem.setRightBarButton(rightBtn, animated: true)
     }
     
+    @objc private func rightBarBtnClick() {
+        let alertController = UIAlertController(title: "\n\n\n\n\n\n\n\n",
+                                                message: nil,
+                                                preferredStyle: .actionSheet)
+        
+        //添加imageView控件
+        let image = UIImage(named: "走路")
+        let imageView = UIImageView(image: image)
+        //actionSheet样式尺寸
+        imageView.frame = CGRect(x: alertController.view.center.x - 75 , y: 10,
+                                 width: 150,
+                                 height: 150)
+        alertController.view.addSubview(imageView)
+        
+        let cancelAction = UIAlertAction(title: "确定", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        self.present(alertController, animated: true, completion: nil)
+        
+    }
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {

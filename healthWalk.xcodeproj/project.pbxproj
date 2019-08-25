@@ -17,6 +17,7 @@
 		0B050F27230E728A00562DF7 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B050F26230E728A00562DF7 /* HealthKit.framework */; };
 		0B050F29230E72EE00562DF7 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B050F28230E72EE00562DF7 /* HealthManager.swift */; };
 		0BE953892312933B005C6A19 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE953882312933B005C6A19 /* BaseNavigationController.swift */; };
+		0BE9538B2312D3A9005C6A19 /* 走路.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BE9538A2312D3A9005C6A19 /* 走路.png */; };
 		0BFE206D230FC8EE0053E581 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE206C230FC8EE0053E581 /* Const.swift */; };
 		0BFE206F230FD78B0053E581 /* HealthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE206E230FD78B0053E581 /* HealthTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		0B050F26230E728A00562DF7 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		0B050F28230E72EE00562DF7 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		0BE953882312933B005C6A19 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		0BE9538A2312D3A9005C6A19 /* 走路.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "走路.png"; sourceTree = "<group>"; };
 		0BFE206C230FC8EE0053E581 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		0BFE206E230FD78B0053E581 /* HealthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 				0B050F28230E72EE00562DF7 /* HealthManager.swift */,
 				0B050EFA230E6B4800562DF7 /* Main.storyboard */,
 				0B050EFD230E6B4A00562DF7 /* Assets.xcassets */,
+				0BE9538A2312D3A9005C6A19 /* 走路.png */,
 				0B050EFF230E6B4A00562DF7 /* LaunchScreen.storyboard */,
 				0B050F02230E6B4A00562DF7 /* Info.plist */,
 			);
@@ -260,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BE9538B2312D3A9005C6A19 /* 走路.png in Resources */,
 				0B050F01230E6B4A00562DF7 /* LaunchScreen.storyboard in Resources */,
 				0B050EFE230E6B4A00562DF7 /* Assets.xcassets in Resources */,
 				0B050EFC230E6B4800562DF7 /* Main.storyboard in Resources */,

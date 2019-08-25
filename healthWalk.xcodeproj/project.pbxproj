@@ -16,6 +16,7 @@
 		0B050F17230E6B4A00562DF7 /* healthWalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B050F16230E6B4A00562DF7 /* healthWalkUITests.swift */; };
 		0B050F27230E728A00562DF7 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B050F26230E728A00562DF7 /* HealthKit.framework */; };
 		0B050F29230E72EE00562DF7 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B050F28230E72EE00562DF7 /* HealthManager.swift */; };
+		0BE953892312933B005C6A19 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE953882312933B005C6A19 /* BaseNavigationController.swift */; };
 		0BFE206D230FC8EE0053E581 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE206C230FC8EE0053E581 /* Const.swift */; };
 		0BFE206F230FD78B0053E581 /* HealthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE206E230FD78B0053E581 /* HealthTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		0B050F24230E728A00562DF7 /* healthWalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = healthWalk.entitlements; sourceTree = "<group>"; };
 		0B050F26230E728A00562DF7 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		0B050F28230E72EE00562DF7 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		0BE953882312933B005C6A19 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		0BFE206C230FC8EE0053E581 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		0BFE206E230FD78B0053E581 /* HealthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 				0B050F24230E728A00562DF7 /* healthWalk.entitlements */,
 				0B050EF6230E6B4800562DF7 /* AppDelegate.swift */,
 				0B050EF8230E6B4800562DF7 /* ViewController.swift */,
+				0BE953882312933B005C6A19 /* BaseNavigationController.swift */,
 				0BFE206E230FD78B0053E581 /* HealthTableViewCell.swift */,
 				0BFE206C230FC8EE0053E581 /* Const.swift */,
 				0B050F28230E72EE00562DF7 /* HealthManager.swift */,
@@ -286,6 +289,7 @@
 			files = (
 				0B050EF9230E6B4800562DF7 /* ViewController.swift in Sources */,
 				0BFE206F230FD78B0053E581 /* HealthTableViewCell.swift in Sources */,
+				0BE953892312933B005C6A19 /* BaseNavigationController.swift in Sources */,
 				0BFE206D230FC8EE0053E581 /* Const.swift in Sources */,
 				0B050F29230E72EE00562DF7 /* HealthManager.swift in Sources */,
 				0B050EF7230E6B4800562DF7 /* AppDelegate.swift in Sources */,

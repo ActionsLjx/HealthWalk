@@ -80,6 +80,7 @@ class HealthManager: NSObject {
                     let _res = res as? HKQuantitySample
                     localSum = localSum + (_res?.quantity.doubleValue(for: HKUnit.count()))!
                 }
+                
             }
             print("当前步数  -- \(currentDeviceSum)")
             print("当前步数  -- \(localSum)")

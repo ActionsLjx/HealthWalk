@@ -35,10 +35,15 @@ class ViewController: UIViewController {
     }
 
     private func configUI() {
+        configNavi()
         self.view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
         
+    }
+    
+    private func configNavi() {
+        self.title = "健康"
     }
     
 }
@@ -63,11 +68,14 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         if indexPath.row == 0 {
             let alertVC = UIAlertController.init(title: "修改步数", message: "输入需要增加/减少的步数", preferredStyle: UIAlertController.Style.alert)
             alertVC.addTextField { (textField) in
-                textField.keyboardType = .numberPad
+                textField.keyboardType = .numbersAndPunctuation
                 textField.placeholder = "请输入步数"
             }
-            let action1 = UIAlertAction.init(title: "确认", style: UIAlertAction.Style.default) { (action) in
-//                healthManager.stepWirte(nextStep: <#T##Double#>)
+            let action1 = UIAlertAction.init(title: "确认", style: UIAlertAction.Style.default) { [weak self](action) in
+                guard let stepString = alertVC.textFields?.first?.text else { return }
+                let stepInt = Int(stepString) ?? 0
+                let stepDouble = Double(stepInt)
+                self?.healthManager.stepWirte(nextStep: stepDouble)
             }
             alertVC.addAction(action1)
             self.present(alertVC, animated: true, completion: nil)
